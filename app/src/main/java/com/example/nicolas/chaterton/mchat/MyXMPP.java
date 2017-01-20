@@ -26,6 +26,7 @@ import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.nicolas.chaterton.R;
 import com.google.gson.Gson;
 import com.example.nicolas.chaterton.fragments.Chats;
 
@@ -240,7 +241,7 @@ public class MyXMPP {
         if (!chat_created) {
             Mychat = ChatManager.getInstanceFor(connection).createChat(
                     chatMessage.receiver + "@"
-                            + context.getString(R.string.server),
+                             +context.getString(R.string.server),
                     mMessageListener);
             chat_created = true;
         }
